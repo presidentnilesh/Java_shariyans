@@ -7,7 +7,6 @@
 //         int size = sc.nextInt();
 //         int arr[] = new int[size] ;
 //         System.out.println("Enter the "+ size + "elements of the array .");
-        
 //         for ( int i=0 ; i<arr.length ; i++){
 //             arr[i] = sc.nextInt() ;
 //         }
@@ -57,13 +56,11 @@
 //         if (arr[0]<arr[1]){
 //             int max = arr[1] ;
 //             int secMax = arr[0];
-
 //             for (int i=0 ; i<arr.length ; i++){
 //                 if ( arr[i]>max){
 //                     secMax = max ;
 //                     max=arr[i];
 //                 }
-                
 //             }
 //             System.out.println("max = " + max + " SecMax = "+ secMax);
 //         }
@@ -77,7 +74,6 @@
 //     public static void main(String[] args){
 //         int arr[] = {12,23,34,45,56,67};
 //         boolean Shorted = true ;
-
 //         for ( int i =0 ; i<arr.length-1 ; i++){
 //             if (arr[i]>arr[i+1] ){
 //                 Shorted = false ;
@@ -109,7 +105,6 @@
             // ------OR------
 
 // import java.util.Arrays;
-
 // public class arr{
 //     public static void main(String[] args){
 //         int arr[] = {2,5,23,6,3,34,78,22};
@@ -125,21 +120,58 @@
 
         // ---- improved version --------
 
-import java.util.Arrays;
+// import java.util.Arrays;
+// public class arr{
+//     public static void main(String[] args){
+//         int arr[] = {2,6,8,11,5,23,9,18} ;
+//         int start = 0;
+//         int end = arr.length -1 ;
+//         while(start < end ){
+//             int temp = arr[start] ;
+//             arr[start] = arr[end] ;
+//             arr[end] = temp ;
+//             start ++ ;
+//             end -- ;
+//         }
+//         System.out.println(Arrays.toString(arr));
+//         }
+// }
 
-public class arr{
-    public static void main(String[] args){
-        int arr[] = {2,6,8,11,5,23,9,18} ;
-        int start = 0;
-        int end = arr.length -1 ;
-        
-        while(start < end ){
-            int temp = arr[start] ;
-            arr[start] = arr[end] ;
-            arr[end] = temp ;
-            start ++ ;
-            end -- ;
+
+        // left rotate by one 
+
+
+// import java.util.Arrays;
+// public class arr {
+//     public static void main(){
+//         int arr[] = {2,5,7,9,11,13};
+//         int start = arr[0 ] ;
+//         for ( int i = 0 ; i< arr.length-1 ; i++){
+//             arr[i] = arr[i+1] ;
+//         }
+//         arr[arr.length - 1 ] = start ;
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+        // left rotate by K
+
+import java.util.Arrays;
+import java.util.Scanner ;
+public class arr {
+    public static void main (String[] args){
+        int arr[] =  {2,5,7,9,11,13,15} ;
+        Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
+        for ( int j = 1 ; j<=(k%(arr.length) ) ; j++){
+            int start = arr[0] ;
+            for (int i = 0 ; i < arr.length-1 ; i++){
+            arr[i] = arr[i+1];
+        }
+        arr[arr.length - 1] = start ;
         }
         System.out.println(Arrays.toString(arr));
-        }
+    }
 }
+
+        // 
