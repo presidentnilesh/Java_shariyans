@@ -255,29 +255,52 @@
 
                 //BInary search 
 
-public class arr{
-        public static void main(String[] args){
-                int arr[] = { 2,4,5,7,9,11,13,14,45,56,90};
-                int target = 56 , end = arr.length -1 , start = 0 , ans = -1 ;
+// public class arr{
+//         public static void main(String[] args){
+//                 int arr[] = { 2,4,5,7,9,11,13,14,45,56,90};
+//                 int target = 56 , end = arr.length -1 , start = 0 , ans = -1 ;
         
-                while ( start<=end ){
-                        int mid = (start + end)/2 ;
-                        if ( target == arr[mid] ){
-                                ans = mid ;
-                                break ;
-                        }
-                        else if(target < arr[mid]){
-                                end = mid - 1 ;
-                        }
-                        else {
-                                start = mid + 1 ;
-                        }
-                }
-                System.out.println(ans);
+//                 while ( start<=end ){
+//                         int mid = (start + end)/2 ;
+//                         if ( target == arr[mid] ){
+//                                 ans = mid ;
+//                                 break ;
+//                         }
+//                         else if(target < arr[mid]){
+//                                 end = mid - 1 ;
+//                         }
+//                         else {
+//                                 start = mid + 1 ;
+//                         }
+//                 }
+//                 System.out.println(ans);
                 
                
+//         }
+// }
+
+
+                //BUBBLE SHORTING 
+
+import java.util.Arrays;
+
+public class arr{
+        public static void main (String[] args ){
+                int arr[] = { 0 ,5 ,4,7,3,3 ,2,1};
+                boolean isSWap = false ;
+                System.out.println(Arrays.toString(arr));
+                for ( int i= 0 ; i<arr.length-1 ; i++){
+                        for ( int j =0 ; j<arr.length-1 ; j++){
+                                if(arr[j]>arr[j+1]){
+                                        int temp= arr[j];
+                                        arr[j]=arr[j+1];
+                                        arr[j+1]= temp ;
+                                }
+                        }
+                        if ( !isSWap){
+                                break ;
+                        }
+                }
+                
         }
 }
-
-
-                //
