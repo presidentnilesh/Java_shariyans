@@ -156,22 +156,128 @@
 
         // left rotate by K
 
-import java.util.Arrays;
-import java.util.Scanner ;
-public class arr {
-    public static void main (String[] args){
-        int arr[] =  {2,5,7,9,11,13,15} ;
-        Scanner sc = new Scanner(System.in);
-        int k = sc.nextInt();
-        for ( int j = 1 ; j<=(k%(arr.length) ) ; j++){
-            int start = arr[0] ;
-            for (int i = 0 ; i < arr.length-1 ; i++){
-            arr[i] = arr[i+1];
+// import java.util.Arrays;
+// import java.util.Scanner ;
+// public class arr {
+//     public static void main (String[] args){
+//         int arr[] =  {2,5,7,9,11,13,15} ;
+//         Scanner sc = new Scanner(System.in);
+//         int k = sc.nextInt();
+//         for ( int j = 1 ; j<=(k%(arr.length) ) ; j++){
+//             int start = arr[0] ;
+//             for (int i = 0 ; i < arr.length-1 ; i++){
+//             arr[i] = arr[i+1];
+//         }
+//         arr[arr.length - 1] = start ;
+//         }
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+        // RIGTH ROTATE 
+
+// import java.util.Arrays;
+
+// public class arr {
+//     public static void main (String[] args){
+//         int arr[] =  {2,5,7,9,11,13,15} ;
+
+//             int endd = arr[arr.length-1] ;
+//             for (int i = arr.length -1 ; i >= 0 ; i--){
+//             arr[i] = arr[i+1];
+//         }
+//         arr[0 ] = endd ;
+        
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+
+        // sum to dighit in a contiguous sub-set 
+
+// import java.util.ArrayList;
+// import java.util.Set;
+
+// public class arr {
+//     public static void main (String[] args){
+//         int arr[] = {2,4,6,8,11,13,15,12};
+//         int count = 0 ;
+//         for ( int i = 0 ; i<arr.length ; i++){
+//             int sum = 0 ; 
+//                 for ( int j=i ; j<arr.length ; j++){
+//                     if (sum<12){
+//                         sum +=arr[j] ;
+//                     }
+//                     else if (sum == 12){
+//                         count +=1 ;
+//                     }
+//                 }
+//         }
+//         System.out.println(count);
+//     }
+// }
+
+
+        //leetcode 283 
+
+// import java.util.Arrays ;
+// public class arr {
+//     public static void main(String[] args) {
+//         int arr[]= { 2,0,9,22,12,0,13,9,0,23};
+//         int end = arr.length -1 ;
+//         int start = 0 ;
+//         for ( int i = 0 ; i<end ; i++){
+//                 if (arr[i]!=0){
+//                         arr[start++]= arr[i];
+//                 }else{
+//                         arr[end--] = 0 ; 
+//                 }
+//         }
+//         System.out.println(Arrays.toString(arr));
+//     }
+// }
+
+                // linear search 
+
+// public class arr{
+//         public static void main (String[] args){
+//                 int arr[]= {5,7,9,1,2,13,15,23};
+//                 int target = 20 , ans = -1;
+//                 for ( int i = 0 ; i < arr.length ; i++){
+//                         if ( arr[i] == target ){
+//                                 ans = i ;
+//                                 break ;
+//                         }
+//                 }
+//                 System.out.println(ans);
+//         }
+// }
+
+                //BInary search 
+
+public class arr{
+        public static void main(String[] args){
+                int arr[] = { 2,4,5,7,9,11,13,14,45,56,90};
+                int target = 56 , end = arr.length -1 , start = 0 , ans = -1 ;
+        
+                while ( start<=end ){
+                        int mid = (start + end)/2 ;
+                        if ( target == arr[mid] ){
+                                ans = mid ;
+                                break ;
+                        }
+                        else if(target < arr[mid]){
+                                end = mid - 1 ;
+                        }
+                        else {
+                                start = mid + 1 ;
+                        }
+                }
+                System.out.println(ans);
+                
+               
         }
-        arr[arr.length - 1] = start ;
-        }
-        System.out.println(Arrays.toString(arr));
-    }
 }
 
-        // 
+
+                //
