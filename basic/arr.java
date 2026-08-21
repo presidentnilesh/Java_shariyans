@@ -305,20 +305,44 @@
 //         }
 // }
 
-                //SHORTING
+                //selectionShort
+
+// import java.util.Arrays;
+
+// public class arr{
+//         public static void main (String[] args){
+//                 int arr[] = { 0 ,5 ,4,7,3,3 ,2,1};
+//                 for ( int i = 0 ; i<arr.length ; i++){
+//                         for ( int j = i+1 ; j<arr.length  ; j++){
+//                                 if ( arr[i] > arr[j]){
+//                                         int temp = arr[i];
+//                                         arr[i]=arr[j];
+//                                         arr[j]= temp ;
+//                                 }
+//                         }
+//                 }
+//                 System.out.println(Arrays.toString(arr));
+//         }
+// }
+
+// optimmised version of selectionShort 
 
 import java.util.Arrays;
 
-public class arr{
+public class arr {
         public static void main (String[] args){
-                int arr[] = { 0 ,5 ,4,7,3,3 ,2,1};
-                for ( int i = 0 ; i<arr.length ; i++){
-                        for ( int j = i+1 ; j<arr.length  ; j++){
-                                if ( arr[i] > arr[j]){
-                                        int temp = arr[i];
-                                        arr[i]=arr[j];
-                                        arr[j]= temp ;
+                int arr[]= {5,4,3,2,1,0};
+                for ( int i = 0 ; i < arr.length ; i++){
+                        int min = i ;
+                        for ( int j = i+1 ; j <arr.length ; j++ ){
+                                if( arr[j]< arr[min]){
+                                        min = j ;
                                 }
+                        }
+                        if(min != i){
+                                int temp = arr[ i];
+                                arr[i]=arr[min];
+                                arr[min]=temp ;
                         }
                 }
                 System.out.println(Arrays.toString(arr));
