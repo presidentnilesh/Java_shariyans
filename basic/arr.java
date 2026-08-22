@@ -359,9 +359,7 @@ public class arr {
                 for ( int i =1 ; i<arr.length ;i++){
                         for ( int j = i; j>0 ; j--){
                                 if (arr[j]<arr[j-1]){
-                                        int temp = arr[j];
-                                        arr[j]= arr[j-1];
-                                        arr[j-1]= temp ;
+                                        swap(arr , j, j-1);
                                 }
                                 else {
                                         break ;
@@ -370,5 +368,13 @@ public class arr {
                 }
                 System.out.println(Arrays.toString(arr));
         }
-}
+                // instead of using swap again and again we canmake a function of swap and call where ever needed .
 
+        public static void swap ( int arr[] , int i , int j ){
+                int temp = arr[i];
+                arr[i] = arr[j] ;
+                arr[j] = temp ;
+        }
+
+
+}

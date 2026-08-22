@@ -17,3 +17,6 @@ public class passByReferance {
         arr[1]= 100 ;
     }
 }
+
+
+        
