@@ -116,4 +116,61 @@
     //     }
     // }
 
-            //
+            // ^ sign
+            
+// public class pattern {
+//     public static void main(String[] args){
+//         int n = 6 ;
+//         for ( int r = 1 ; r<=n+1 ; r++){
+//             for( int j = 1 ; j<=n-r ; j++){
+//                 System.out.print(" ");
+//             }
+            
+//             System.out.print("* ");
+//             for(int j = 1 ; j<=2*r - 3 ; j++){
+//                 System.out.print(" ");
+//             }   
+//             System.out.print("* ");
+//             if(r==n+1){
+//                 for(int i=1 ; i<=2*n-1 ;i++ ){
+//                     System.out.print("*");
+//                 }
+//             }          
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+
+// fixed 
+
+public class pattern {
+public static void main(String[] args){
+        int n = 5 ;
+        for( int r =1 ; r<=n+1 ; r++ ){
+                if ( r==n+1){
+                        for(int m=1 ; m<=2*n-1 ; m++ ){
+                                System.out.print("*");
+                        }
+                }
+                else {
+                        for ( int j = 1 ; j<= n-r ; j++ ){
+                                System.out.print(" ");
+                        }
+                        if(r==1 ){
+                                System.out.print("*");
+                        }
+                        else{
+                                System.out.print("*");
+                                for( int j = 1 ;  j<=2*r - 3 ; j++){
+                                        System.out.print(" ");
+                                }
+                                System.out.print("* ");
+                        }
+
+                }
+                System.out.println();
+        }
+}
+}

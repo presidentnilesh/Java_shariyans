@@ -1,8 +1,4 @@
-if(r>n){
-                //     for(int p = 1 ; p<=totalCol-1 ; p++){
-                //         System.out.print(" ");
-                //     }
-                //     for( int p = 1 ; p<=totalCol ; p++){
-                //         System.out.print("* ");
-                //     }
-                // }
+ // if(r==n+1){
+            //     for(int i=1 ; i<=2*n-1 ;i++ ){
+            //         System.out.print("*");
+            //     }
