@@ -95,8 +95,25 @@
 
             // clock pattern 
 
-    public class pattern {
-        public static void main(String[] args){
-            
-        }
-    }
+    // public class pattern {
+    //     public static void main(String[] args){
+    //         int totalCol , n = 5 ,rows= 2*n -1 ;
+    //         for( int r = 1; r<=rows ; r++){
+    //             if ( r <=n ){
+    //                 totalCol= n-r+1;
+    //             }
+    //             else{
+    //                 totalCol = r-n+1;
+    //             }
+    //             for( int p = 1 ; p<=n-totalCol ; p++){
+    //                 System.out.print(" ");
+    //             }
+    //             for(int p =1 ; p<=totalCol; p++){
+    //                 System.out.print("* ");
+    //             }
+    //             System.out.println();
+    //         }
+    //     }
+    // }
+
+            //
