@@ -129,3 +129,104 @@
 // }
 
 
+                // pyramid pattern
+        // still error
+// public class nasted{
+//         public static void main(String[] args) {
+//                 int n = 4 ,  c ;
+//                 int r ;
+//                 int totalC ;
+
+//                 for ( r= 1 ; r<=2*n-1 ; r++){
+//                         totalC = r>n ? 2*n-r :r ;
+                
+//                 for ( c = 1 ; c<=2*n -1 ; c++ ){
+//                         for ( int s = 1 ; s<=n-totalC ; s++){
+//                                 System.out.println(" ");
+//                         }
+//                         for ( int st = 1 )
+//                 }
+//         }
+// }
+// }
+
+
+                // pyramid by sir 
+
+// public class nasted {
+//         public static void main (String[] args ){
+//                 int n =4 ;
+//                 for ( int i = 0 ; i<n ; i++){
+//                         for (int j = 0 ; j<n-i ; j++){
+//                                 System.out.print(" ");
+//                         }
+//                         for ( int j=0 ;j<i+1;j++ ){
+//                                 System.out.print("* ");
+//                         }
+//                         System.out.println(" ");
+//                 }
+//         }
+// }
+
+                // left butterfly
+
+// public class nasted{
+//         public static void main(String[] args){
+//                 int n = 3 ;
+//                 int c  ;
+//                 for ( int i =0 ; i<2*n-1 ; i++){
+//                         if ( i <=n){
+//                                 c = i ;
+//                         }
+//                         else{
+//                                 c=i-n;
+//                         }
+//                         for ( int j = 0 ; j<c ;j++){
+//                                 System.out.print("* ");
+//                         }
+//                         System.out.println();
+//                 }
+//         }
+// }
+// public class nasted{
+//         public static void main(String[] args){
+//                 int n = 3 ;
+//                 int c  ;
+//                 for ( int i =0 ; i<2*n-1 ; i++){
+//                         if ( i <=n){
+//                                 c = i ;
+//                         }
+//                         else{
+//                                 c=i-n;
+//                         }
+//                         for ( int j = 0 ; j<c ;j++){
+//                                 System.out.print("* ");
+//                         }
+//                         System.out.println();
+//                 }
+//         }
+// }
+
+
+                // left butterfly 
+
+public class nested {
+    public static void main(String[] args) {
+
+        int n = 5;
+
+        for (int r = 1; r <= n; r++) {
+            for (int s = 1; s <= r; s++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int r = n - 1; r >= 1; r--) {
+            for (int s = 1; s <= r; s++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
