@@ -145,32 +145,95 @@
 
 // fixed 
 
-public class pattern {
-public static void main(String[] args){
-        int n = 5 ;
-        for( int r =1 ; r<=n+1 ; r++ ){
-                if ( r==n+1){
-                        for(int m=1 ; m<=2*n-1 ; m++ ){
-                                System.out.print("*");
-                        }
-                }
-                else {
-                        for ( int j = 1 ; j<= n-r ; j++ ){
-                                System.out.print(" ");
-                        }
-                        if(r==1 ){
-                                System.out.print("*");
-                        }
-                        else{
-                                System.out.print("*");
-                                for( int j = 1 ;  j<=2*r - 3 ; j++){
-                                        System.out.print(" ");
-                                }
-                                System.out.print("* ");
-                        }
+// public class pattern {
+// public static void main(String[] args){
+//         int n = 5 ;
+//         for( int r =1 ; r<=n+1 ; r++ ){
+//                 if ( r==n+1){
+//                         for(int m=1 ; m<=2*n-1 ; m++ ){
+//                                 System.out.print("*");
+//                         }
+//                 }
+//                 else {
+//                         for ( int j = 1 ; j<= n-r ; j++ ){
+//                                 System.out.print(" ");
+//                         }
+//                         if(r==1 ){
+//                                 System.out.print("*");
+//                         }
+//                         else{
+//                                 System.out.print("*");
+//                                 for( int j = 1 ;  j<=2*r - 3 ; j++){
+//                                         System.out.print(" ");
+//                                 }
+//                                 System.out.print("* ");
+//                         }
 
-                }
-                System.out.println();
-        }
-}
-}
+//                 }
+//                 System.out.println();
+//         }
+// }
+// }
+
+        // X pattern 
+// public class pattern{
+//         public static void main(String[] args){
+//                 int n= 9 ;
+//                 int half = n/2+1 ;
+//                 for( int r = 1 ;r<=n; r++){
+//                         if(r<(n/2)+1){
+//                              for(int i = 1 ; i<=r-1 ; i++){
+//                                 System.out.print((" "));
+//                         }
+//                         System.out.print("*");
+//                         for( int j=1 ; j<=n-2*r; j++){
+//                                 System.out.print(" ");
+//                         }
+//                         System.out.print("*");
+//                         }
+//                         else{
+//                                 if(r==n/2+1){
+//                                         for( int i = 1 ; i<=n/2 ;i++){
+//                                                 System.out.print(" ");
+//                                         }
+//                                         System.out.print("*");
+//                                 }
+//                                 else{
+//                                         for ( int i = 1 ; i<=n-r ; i++){
+//                                         System.out.print(" ");
+//                                 }
+//                                 System.out.print("*");
+//                                 for (int j = 1; j <= 2 * r - n - 2; j++) {
+//                                         System.out.print(" ");
+//                                 }
+//                                 System.out.print("* ");
+//                                 }
+//                         }
+//                         System.out.println();
+//                 }
+//         }
+// }
+
+
+                // number pyramind
+
+// public class pyramid{
+//         public static void main(String[] args){
+//                 int n = 5 ;
+//                 int arr[][]= new int[n][2*n] ;
+//                 for( int i = 0 ; i<n ; i++){
+//                         for(int j=0 ; j<2*n; j++){
+//                                 if (i+j==4 ){
+//                                         System.out.println("1");
+//                                 }
+//                                 else{
+                                        
+//                                 }
+
+//                         }
+//                 }
+//         }
+// }
+
+
+          
