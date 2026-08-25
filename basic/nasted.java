@@ -1,3 +1,4 @@
+//solid rectangle
 // public class nasted {
 //     public static void main(String[] args ){
 //         for ( int i=1 ; i<=5 ; i++){
@@ -10,7 +11,6 @@
 // }
 
         // PYRAMID
-
 // public class nasted {
 //     public static void main(String[] args) {
 //         int n = 6;
@@ -27,7 +27,6 @@
 // }
 
         // RIGHT ANGLED TRIANGLE 
-
 // public class nasted {
 //     public static void main (String[] args ){
 //         for ( int i= 0 ; i<6 ;i++ ){
@@ -40,7 +39,6 @@
 // }
 
         // INVERTED RIGHT TRAINGLE
-
 // public class nasted {
 // public static void main(String[] args){
 //     for ( int i = 0 ; i <6 ; i++){
@@ -53,7 +51,6 @@
 // }
 
         // MIRRORED RIGHT TRIANGLE
-
 // public class nasted {
 //     public static void main(String[] args ){
 //         for ( int i= 0 ; i<6 ; i++){
@@ -71,7 +68,6 @@
 
 
         // V star pattern 
-
 // public class nasted {
 //     public static void main(String[] args){
 //         int n= 5 ;
@@ -91,8 +87,7 @@
 //     } 
 //         }
 
-        //OR 
-    
+        //OR  
 // public class nasted {
 //     public static void main (String[] args){
 //         int n = 5 ;
@@ -111,7 +106,6 @@
 // }
 
         // X-PATTERN
-
 // public class nasted {
 //     public static void main(String[] args){
 //         int n =4 ;
@@ -136,10 +130,8 @@
 //                 int n = 4 ,  c ;
 //                 int r ;
 //                 int totalC ;
-
 //                 for ( r= 1 ; r<=2*n-1 ; r++){
-//                         totalC = r>n ? 2*n-r :r ;
-                
+//                         totalC = r>n ? 2*n-r :r ;                
 //                 for ( c = 1 ; c<=2*n -1 ; c++ ){
 //                         for ( int s = 1 ; s<=n-totalC ; s++){
 //                                 System.out.println(" ");
@@ -152,7 +144,6 @@
 
 
                 // pyramid by sir 
-
 // public class nasted {
 //         public static void main (String[] args ){
 //                 int n =4 ;
@@ -169,7 +160,6 @@
 // }
 
                 // left butterfly
-
 // public class nasted{
 //         public static void main(String[] args){
 //                 int n = 3 ;
@@ -209,24 +199,38 @@
 
 
                 // left butterfly 
+// public class nested {
+//     public static void main(String[] args) {
+//         int n = 5;
+//         for (int r = 1; r <= n; r++) {
+//             for (int s = 1; s <= r; s++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//         for (int r = n - 1; r >= 1; r--) {
+//             for (int s = 1; s <= r; s++) {
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
 
-public class nested {
-    public static void main(String[] args) {
 
-        int n = 5;
+                // sum of the diagonal melemnt in the matrix 
+public class nasted{
+        public static void main(String[] args){
+                int arr[][]= {{1,2,3},{4,5,6},{7,8,9}};
+                int n = arr.length , sum = 0;
+                for(int r =0 ; r<n ; r++){
+                        for(int j = 0 ; j<arr[0].length ; j++){
+                                if(r==j || r+j==2 ){
+                                        sum +=arr[r][j];
+                                }
+                        }
+                }
+                System.out.println(sum);
 
-        for (int r = 1; r <= n; r++) {
-            for (int s = 1; s <= r; s++) {
-                System.out.print("* ");
-            }
-            System.out.println();
         }
-
-        for (int r = n - 1; r >= 1; r--) {
-            for (int s = 1; s <= r; s++) {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
-    }
 }

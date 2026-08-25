@@ -1,11 +1,9 @@
         //pyramid question
-
 // public class pattern {
 //     public static void main(String[] args) {
 //         int n = 9 ;
 //         int Totalcol , c  ;
-//         for ( int r=1 ; r<=2*n-1 ; r++){
-            
+//         for ( int r=1 ; r<=2*n-1 ; r++){          
 //             if ( r<=n){
 //                 Totalcol = r ;
 //             } else{
@@ -19,13 +17,11 @@
 //             }
 //             System.out.println();
 //         }
-//     }
-    
+//     } 
 // }
 
 
             // LEFT BUTTERFLY 
-
 // public class pattern{
 //     public static void main (String[] args){
 //         int n=5 ;
@@ -47,7 +43,6 @@
 // }
 
             // RIGHT BUTTERFLY 
-
 // public class pattern{
 //     public static void main (String[] args){
 //         int n=4 ;
@@ -72,7 +67,6 @@
 // }
 
             //H shape 
-
 // public class pattern{
 //     public static void main(String[] args ){
 //     int n =4 ;
@@ -86,7 +80,6 @@
 //         for ( int y= 1 ; y<=n ; y++){
 //             System.out.print("  ");
 //         }
-
 //         System.out.print("*");
 //         System.out.println();
 // }
@@ -94,7 +87,6 @@
 // }
 
             // clock pattern 
-
     // public class pattern {
     //     public static void main(String[] args){
     //         int totalCol , n = 5 ,rows= 2*n -1 ;
@@ -116,16 +108,14 @@
     //     }
     // }
 
-            // ^ sign
-            
+            // ^ sign     
 // public class pattern {
 //     public static void main(String[] args){
 //         int n = 6 ;
 //         for ( int r = 1 ; r<=n+1 ; r++){
 //             for( int j = 1 ; j<=n-r ; j++){
 //                 System.out.print(" ");
-//             }
-            
+//             }     
 //             System.out.print("* ");
 //             for(int j = 1 ; j<=2*r - 3 ; j++){
 //                 System.out.print(" ");
@@ -138,13 +128,11 @@
 //             }          
 //             System.out.println();
 //         }
-
 //     }
 // }
 
 
 // fixed 
-
 // public class pattern {
 // public static void main(String[] args){
 //         int n = 5 ;
@@ -168,7 +156,6 @@
 //                                 }
 //                                 System.out.print("* ");
 //                         }
-
 //                 }
 //                 System.out.println();
 //         }
@@ -215,37 +202,36 @@
 // }
 
 
-                // number pyramind
+          //number pyramind       
+// public class pattern{
+//         public static void main(String[] args){
+//                 int n = 5 ;
+//                 for ( int r = 1 ; r<=n ; r++){
+//                         for ( int i =1 ; i<=r ; i++){
+//                                 System.out.print(i);
+//                         }
+//                         System.out.println();
+//                 }
+//         }
+// }
+               // number pyramind
 
 // public class pyramid{
 //         public static void main(String[] args){
-//                 int n = 5 ;
-//                 int arr[][]= new int[n][2*n] ;
-//                 for( int i = 0 ; i<n ; i++){
-//                         for(int j=0 ; j<2*n; j++){
-//                                 if (i+j==4 ){
-//                                         System.out.println("1");
-//                                 }
-//                                 else{
-                                        
-//                                 }
+//                 int n = 5 , X;
+//                 int arr[][]= new int[n][n] ;
+//                 for( int i = 1 ; i<=n ; i++){
+//                         for( int m = 1 ; m<=n-i ; m++){
+//                                 System.out.print(" ");
+//                         }
+//                         System.out.print(X + " ");
+//                         System.out.println();
+//                         for(int j =0 ; j<=2*n-1 ; j++){
 
 //                         }
+                        
 //                 }
 //         }
 // }
 
-
-          //number pyramind
-
-public class pattern{
-        public static void main(String[] args){
-                int n = 5 ;
-                for ( int r = 1 ; r<=n ; r++){
-                        for ( int i =1 ; i<=r ; i++){
-                                System.out.print(i);
-                        }
-                        System.out.println();
-                }
-        }
-}
+// i'll solve it later 
