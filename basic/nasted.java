@@ -219,18 +219,46 @@
 
 
                 // sum of the diagonal melemnt in the matrix 
-public class nasted{
-        public static void main(String[] args){
-                int arr[][]= {{1,2,3},{4,5,6},{7,8,9}};
-                int n = arr.length , sum = 0;
-                for(int r =0 ; r<n ; r++){
-                        for(int j = 0 ; j<arr[0].length ; j++){
-                                if(r==j || r+j==2 ){
-                                        sum +=arr[r][j];
-                                }
-                        }
-                }
-                System.out.println(sum);
+// public class nasted{
+//         public static void main(String[] args){
+//                 int arr[][]= {{1,2,3},{4,5,6},{7,8,9}};
+//                 int n = arr.length , sum = 0;
+//                 for(int r =0 ; r<n ; r++){
+//                         for(int j = 0 ; j<arr[0].length ; j++){
+//                                 if(r==j || r+j==2 ){
+//                                         sum +=arr[r][j];
+//                                 }
+//                         }
+//                 }
+//                 System.out.println(sum);
+//         }
+// }
 
-        }
-}
+                // Transpose Matrix
+// import java.util.Arrays;
+// public class nasted{
+//         public static void main (String[] args){
+//                 int arr[][]= {{1,2,3},{4,5,6},{7,8,9}};
+//                 int m = arr.length ;
+//                 int n = arr[0].length ;
+//                 int rev[][] = new int[n][m];
+//                 for ( int r=0 ; r<m ; r++){
+//                         for( int j = 0 ;j<n ; j++ ){
+//                                 rev[j][r]=arr[r][j]  ;
+//                         }
+//                 }
+//                 // for ( int r=0 ; r<m ; r++){
+//                 //         for( int j = 0 ;j<n ; j++ ){
+//                 //               System.out.print(rev[r][j] + " ");
+//                 //         }
+//                 //         System.out.println();
+//                 // }
+//                                    // one more method 
+//                 for ( int r =0 ; r <rev.length ; r++ ){
+//                         System.out.println(Arrays.toString(rev[r])+" ");
+//                 }
+//                 }
+// }
+
+
+                // 
