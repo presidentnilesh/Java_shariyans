@@ -31,7 +31,7 @@
 //             if( r<=n){
 //                  totalC = r ;
 //             }
-//             else {
+//             else { 
 //                  totalC = m-r+1;
 //             }
 //             for( int p=1 ; p<=totalC ;p++){
@@ -235,3 +235,22 @@
 // }
 
 // i'll solve it later 
+
+
+
+// 29 august 
+
+public class pyramid {
+        public static void main(String[] args){
+                int n = 5 ;
+                for ( int i =0 ; i < n ; i++){
+                        for ( int j = 0 ; j<i+1 ; j++){
+                                System.out.print("*");
+                        }
+                        if( i==(n/2)+1){
+                                System.out.print("*");
+                        }
+                        System.out.println();
+                }
+        }
+}

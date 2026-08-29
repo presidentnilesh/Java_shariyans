@@ -261,4 +261,27 @@
 // }
 
 
-                // 
+                // rotate image 
+// import java.util.Arrays;
+// public class nasted{
+//         public static void main(String[] args){
+//                 int n =3;
+//                 int arr[][] = {{1,2,3},{4,5,6},{7,8,9}};
+//                 int rev[][] = new int[n][n]; 
+//                 for ( int r = 0 ; r<n ; r++){
+//                         for ( int j = 0 ; j<n ; j++){
+//                                 rev[j][r] = arr[r][j];
+//                         }
+//                 }
+//                 for( int r=0 ; r<n ; r++){
+//                         for( int j =0 ; j<n/2 ; j++){
+//                                 int temp = rev[r][j];
+//                                 rev[r][j] = rev[r][n-j-1];
+//                                 rev[r][n-j-1]= temp ;                       
+//                         }
+//                 }
+//                 for ( int r =0 ; r<rev.length ; r++){        
+//                         System.out.println(Arrays.toString(rev[r])+" ");
+//                 }
+//         }
+// }
